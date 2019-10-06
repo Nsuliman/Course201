@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Personal Information
+    </title>
+
+    <style>
+        header {
+
+            background-color: blue;
+            padding: 50px;
+            text-align: center;
+            color: cyan;
+            text-size-adjust: auto;
+
+        }
+
+        h1 {
+
+            padding: 100px;
+            text-align: center;
+        }
+
+        a {
+            color : rgb(247, 17, 216) ;
+        }
+        footer {
+            color :wheat ;
+            background-color: navy ;
+            text-align: center ;
+        }
+    </style>
+</head>
+
+<body>
+        document.write(createGreeting());
+
+    <header>
+        Welcome in personal questionaire
+
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="https://www.fandom.com/topics/games">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fandom.com/topics/movies">
+                        More tests
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fandom.com/topics/tv">
+                        Chat
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fandom.com/video">
+                        Learning Videos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://movie.idevcreations.com/support">
+                        Contact US
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <img src="https://images.all-free-download.com/images/graphicthumb/nice_flowers_201855.jpg">
+    </header>
+    <main>
+        <h1 style="color:crimson; background-color: black;"> Class 1 Lab : </h1>
+
+        <h2 style="color: rebeccapurple; background-color: rgb(192, 166, 166);"> Hello , what is your name </h1>
+            <h3 style="color:greenyellow; background-color: green;">how old are you ?
+        </h2>
+        <h4 style="color:yellow; background-color: orange;"> where do you come from ?</h3>
+            <h5 style="color:pink; background-color: rgb(194, 122, 122);"> what do you do ?
+        </h4>
+    </main>
+    
+    
+    <footer>
+            Welcome All The Time - Copyright 2019 - New Tests Websites
+       </footer>
+
+    <script>
+
+
+var name = prompt('Hello , what is your name ? ');
+alert(' Nice to meet you :' + name);
+
+var age = prompt( name + '   '+ ' , how old are you  ?  ');
+alert(' beautifull ' + age + '   ' +'  years ' + name );
+
+var country = prompt(name + '  '+ age + '   '+ 'years , ' + '   '+ 'where do you come from  ? ');
+alert(' beautifull ' + '  '+ age + '  years  :) ' +'  '+ name + '   '+ ' amazing place is ' + '  '+  country );
+
+var job = prompt(name + '  '+ age + '  '+ 'years , ' +  country + '   '+ 'what do you do ? ');
+alert(' beautifull ' + '  '+ age + '  years  :) ' +'  '+ name + '   '+ ' amazing place is ' + '  '+  country + ' well done job title '+  job);
+
+
+//console.log('color' + color);
+
+
+function createGreeting() {
+// input
+//var today = new Date();
+var hournow = prompt(" Please enter what is the time now : ");
+//var hourNow = today.getHours();
+var greeting;
+
+// processing:
+if (hournow > 18) {
+greeting = 'Good evening, Mam/Sir!';
+} else if (hournow >= 12) {
+greeting = 'Good afternoon, Mam/Sir!';
+} else if (hournow >= 0) {
+greeting = 'Good morning!';
+} else {
+greeting = 'Welcome!';
+}
+
+//output:
+return greeting;
+}
+    </script>
+
+</body>
+
+</html>
